@@ -119,10 +119,11 @@
 
     .staff-container {
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 30px;
-        margin-top: 30px;
+        justify-content: space-between; /* distribui Soren | Gustavo | Mortex */
+        flex-wrap: nowrap;
+        max-width: 1000px;
+        margin: 0 auto;
+        gap: 20px;
     }
 
     .profile-card-modern {
@@ -211,6 +212,12 @@
 
     footer a { color: #5865F2; margin: 0 10px; }
 
+    @media(max-width:1024px){
+        .staff-container {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
     @media(max-width:768px) {
         header { padding: 20px; flex-direction: column; }
         nav { margin-top: 15px; }
@@ -251,7 +258,6 @@
     </div>
 </section>
 
-<!-- Seção Staff Atualizada com Gustavo -->
 <section id="staff" class="staff-section">
     <h3 style="font-size: 36px; margin-bottom: 30px;">Fundadores</h3>
     <div class="staff-container">
@@ -264,18 +270,18 @@
         </div>
 
         <div class="profile-card-modern">
-            <img src="https://cdn.discordapp.com/avatars/1194809158772465805/6874a4c91441525f40b16d5012f9ff4f.webp?size=1024" alt="Avatar Mortex">
-            <h4>Mortex</h4>
-            <span>@1ytcf</span>
-            <p>Dono / Founder<br>Responsável pela administração técnica e suporte da comunidade REF.</p>
-            <a href="https://discord.gg/reff" target="_blank">Adicionar no DC</a>
-        </div>
-
-        <div class="profile-card-modern">
             <img src="https://cdn.discordapp.com/avatars/231554094425178122/ee0ba435f8fab7af94b74d0c6d1e67d0.webp?size=1024" alt="Avatar Gustavo">
             <h4>Gustavo</h4>
             <span>@0xs2</span>
             <p>Dono / Founder<br>Responsável por apoio geral e suporte estratégico da comunidade REF.</p>
+            <a href="https://discord.gg/reff" target="_blank">Adicionar no DC</a>
+        </div>
+
+        <div class="profile-card-modern">
+            <img src="https://cdn.discordapp.com/avatars/1194809158772465805/6874a4c91441525f40b16d5012f9ff4f.webp?size=1024" alt="Avatar Mortex">
+            <h4>Mortex</h4>
+            <span>@1ytcf</span>
+            <p>Dono / Founder<br>Responsável pela administração técnica e suporte da comunidade REF.</p>
             <a href="https://discord.gg/reff" target="_blank">Adicionar no DC</a>
         </div>
     </div>
